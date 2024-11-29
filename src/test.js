@@ -1,1 +1,2 @@
-[1,2,3,4,5,6].map(n=> console.log(n + ""))
+let a = 1
+let s = 'dddddd'

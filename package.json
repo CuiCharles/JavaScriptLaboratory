@@ -5,15 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babelcli": "./node_modules/.bin/babel src --out-dir lib"
+    "babelcli": "./node_modules/.bin/babel ./src/test.js --out-dir lib",
+    "build": "./node_modules/.bin/babel ./src/test.js -d lib"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.25.9",
     "@babel/core": "^7.26.0",
+    "@babel/generator": "^7.26.2",
+    "@babel/parser": "^7.26.2",
     "@babel/plugin-transform-arrow-functions": "^7.25.9",
-    "@babel/preset-env": "^7.26.0"
+    "@babel/preset-env": "^7.26.0",
+    "@babel/types": "^7.26.0"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1"
